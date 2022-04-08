@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header  >
+    <div class="navbar navbar-dark bg-black shadow-sm" >
+        <div class="navbar-brand align-item-center d-flex" style="margin-left: 700px;">
+            <strong style="font-size: 30px;text-align: center;margin-right: 0px;margin-left: -40px;" >VISAP</strong> &nbsp;
+            <strong style="font-size: 30px;text-align: center;margin-right: 40px;" >MOBILES</strong>
+           
+  
+        </div>
+    </div>
+  </header><br> <br>
+  
+  <div style="height: 500px;width: 30%;margin-top: 20px;">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+  <form action="action_page.php" method="post" [formGroup]="loginForm" (ngSubmit)="login()">
+    <!-- <h1 style="text-align: center;text-decoration: underline;">VISAP MOBILES</h1> -->
+    <h1 style="text-align: center;">Login</h1>
+    
+  
+    <div class="container">
+      <label for="email"><b>Email</b></label>
+      <input formControlName="emailId" type="text" placeholder="Enter Email" name="email" > <br>
+      <span class="text-danger" *ngIf="loginForm.controls['emailId'].dirty && loginForm.hasError('required','emailId')">*EmailId is required</span><br>
+  
+      <label for="psw"><b>Password</b></label>
+      <input formControlName="password" type="password" placeholder="Enter Password" name="psw" > <br>
+      <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</span>
+      
+      <button type="submit" [disabled]="!loginForm.valid" >Login</button>
+      <button type="submit" routerLink="/demohome" style="background-color: red;">Cancel</button>
+      <!-- <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label> -->
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="submit" routerLink="/signup">SignUp</button>
+      <span class="psw"> <a href="forgotpassword">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

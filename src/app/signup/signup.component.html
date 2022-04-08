@@ -1,0 +1,55 @@
+<header  >
+  <div class="navbar navbar-dark bg-black shadow-sm" >
+      <div class="navbar-brand align-item-center d-flex" style="margin-left: 700px;">
+          <strong style="font-size: 30px;text-align: center;margin-right: 0px;margin-left: -40px;" >VISAP</strong> &nbsp;
+          <strong style="font-size: 30px;text-align: center;margin-right: 40px;" >MOBILES</strong>
+         
+
+      </div>
+  </div>
+</header><br> <br>
+  
+  <section >
+  <div class="container" style="background-color: white;">
+    <form action="action_page.php" style="border:1px solid black" [formGroup]="signupForm" (ngSubmit)="signup()" >
+        <div class="container">
+          <!-- <h1 style="text-align: center;text-decoration: underline;">VISAP MOBILES</h1> -->
+          <h1 style="text-align: center;">SignUp</h1>
+          <p style="text-align: center;">Please fill in this form to create an account.</p>
+          <hr>
+      
+          <label for="name"><b>FullName</b></label>
+          <input formControlName="fullName" type="text" placeholder="Enter FullName" name="name" required>
+          <span class="text-danger" *ngIf="signupForm.controls['fullName'].dirty && signupForm.hasError('required','fullName')">*fullName is required</span><br>
+    
+          <label for="email"><b>Email</b></label>
+          <input formControlName="emailId" type="text" placeholder="Enter Email" name="email" required>
+          <span class="text-danger" *ngIf="signupForm.controls['emailId'].dirty && signupForm.hasError('required','emailId')">*EmailId is required</span><br>
+
+          <label for="number"><b>Number</b></label>
+          <input formControlName="phoneNumber" type="text" placeholder="Enter Number" name="number" required>
+          <span class="text-danger" *ngIf="signupForm.controls['phoneNumber'].dirty && signupForm.hasError('required','phoneNumber')">*phoneNumber is required</span><br>
+          
+          <label for="psw"><b>Password</b></label>
+          <input formControlName="password" type="password" placeholder="Enter Password" name="psw" required>
+          <span class="text-danger" *ngIf="signupForm.controls['password'].dirty && signupForm.hasError('required','password')">*password is required</span><br>
+    
+          <label for="address"><b>Enter address</b></label>
+          <input formControlName="address" type="text" placeholder="Enter address" name="address" required>
+          <span class="text-danger" *ngIf="signupForm.controls['address'].dirty && signupForm.hasError('required','address')">*address is required</span><br>
+
+          <!--       
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+      
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p> -->
+      
+          <div class="clearfix">
+            <button type="button" class="cancelbtn" routerLink="/demohome">Cancel</button>
+            <button type="submit" class="signupbtn" [disabled]="!signupForm.valid">SignUp</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>

@@ -1,0 +1,93 @@
+<app-header></app-header>
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item"> 
+            <a (click)="filter('')">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADi4uL8/PwaGhp2dnbx8fHu7u74+Pjl5eXX19eWlpZeXl48PDwYGBiKioowMDBNTU2ysrKenp4SEhKEhIRvb28NDQ1DQ0POzs7a2trGxsYqKiofHx+oqKhQUFAE4D5fAAADLUlEQVR4nO3a63KiQBRFYREjiHjDW3Q08/5vOaZSM4lKlW179mmGWut/TvorWmhJBoP48mpaz+aZtvmsnlb5C6uMb7wYiXHfjRZjf+B64+b7bLN29pUrV99nq9ITOPTboN+Nhn7A4pwAmGXnwk3ov0W/WnkBt4mAWbbwARbJgFnms093CYU7D2DgJazy56rCxnpcxCZoJc8/oD+C5jYC0W110Eqef3ZNgubWAtFN5TJoJRGTg+Yu9SebYh+0koiFBM3d6z+IYZspq54efAwbPBGYrhuGLWT79ODAc4T+cBoozD6GzxV2K+2SUBVChAgRIkSI0F345lNCofy3fZVQ6PMXkxyhbQgFITQOoSCExiEUhNA4hIIQGodQEELjEApCaBxCQQiNQygIoXEIBSE0DqEghMYhFITQOISCEBqHUBBC4xAKQmgcQkEIjUMoCKFxCAUhNA6hIITGIRSE0DiEghAah1AQQuMQCkJoHEJBCI1DKAihcQgFITQOoSCExiEUhNA4hIIQGodQEELjEApCaBxCQQiNQygIoXEIBSE0DqEghMYhFITQOISCEBqHUBBC4xAKQmgcQkEIjUMoCKFxCAUhNA6hIITGIRSE0DiEghAah1AQQuMQCkJoHEJBCI27EhZjj4qEwpFPCYUJQogQIUKECBEiRIgQIcJVU+R5XjS/eyp8P/wbcnjvo3B3Neatf8L6Zk7dN+Hy7qXVrGfCX3eDfvVL+N4yKe5u01XhtGXStFfCQ8ukQ6+Ebeuym9QFYdEyqXj8Y/+R8Ngy6dgr4f3DIvZx0VXhtmXStlfC0/3f4fJTr4TZ+m7QR9ygzgqzyc2cSeSc7gpP5dWYyD3aZWF2+nkVJ7HALgsvh9O/l7GMO5J2X3j5nt9Ux6rZvTJCL4y9Q1h1e8eyr9gnBe7bTri2lcukwmX5eImvFvsKyabbF1qKmqTCxkEY97XOKv3H8NJLN/sX2z1enkEpL6LLJYz9YmfRwgc4GKwSAVdewEFxTgI8O+3Rz4abBMC5/kj6o9J/o64cTjNXrX0v4+b+NYi88WL0eGFGjRZjf+ClvJrWs7kYN5/V0+qV/5j/A0yhSG4wfo1TAAAAAElFTkSuQmCC" alt="" style="width: 80px;">
+                <h6>All Mobiles</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Iphone')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPz3vEZl3plpnGch9gaCI02S4KEO18ILYFwA&usqp=CAU" alt="" style="width: 90px;">
+                <h6>Iphone</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Oneplus')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt2HgkBVySw_IMI7IHoLWxt68_pFBbSvRY-A&usqp=CAU" alt="" style="width: 160px;">
+                <h6>Oneplus</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Samsung')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpa9ATb-Y00OtliOQi6tNmU-MQgtLhWxmeJR_duk8yLwg02BKnwO-DSBOGp1tqZDnpBhs&usqp=CAU" alt="" style="width: 130px;">
+                <h6>Samsung</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 300px; ">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnmi2sfyJaimBf5PVAirPq41i9IT0U6BLJA&usqp=CAU" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJ6CRq3mHhLCelV8ybUh8zI7Ly7nwEsJFLnGQ1EexBZqNfeUUkDdkCJk0XyPDYaOZDjI&usqp=CAU" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnmi2sfyJaimBf5PVAirPq41i9IT0U6BLJA&usqp=CAU" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ -->
+
+
+
+<div class="container" style="width: 3000px;  height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory ">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 200ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> ₹{{item.price}}</p>
+                
+                <button class="btn btn-primary" (click)=addtocart(item) style="background-color: black;color: white;">Add to cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>
+<div style="text-align: center; background-color: black;" >
+    <a href="#" class="fa fa-facebook" style="width: 100px;height: 70px;"></a>
+    <a href="#" class="fa fa-twitter" style="width: 100px;height: 70px;"></a>
+    <a href="#" class="fa fa-instagram" style="width: 100px;height: 70px;" ></a>
+    </div>
+    
+    
+    
+    <div style="background-color: blanchedalmond;">
+      <footer style="text-align: center;"> <h2 style="text-decoration: underline;"> <b>Contact Us</b></h2></footer><br>
+      <footer style="text-align: center;"><mat-icon>phone</mat-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:+91-7892065575</footer><br>
+       <footer style="text-align: center;"><mat-icon > mail:</mat-icon> &nbsp;&nbsp;&nbsp;&nbsp;VisapMobiles@gmail.com</footer><br>
+      <footer style="text-align: center;"><h2 style="text-decoration: underline;"><b >About Us</b></h2></footer>
+      <footer style="text-align: center;"> <h3 style="text-decoration: underline;">VisapMobiles: The One-stop Shopping Destination  </h3> <br>
+      E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click. This e-commerce never shuts down.What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from VisapMobiles when there are multiple options available to you, well, the below will answer your question.</footer>
+        <footer style="text-align: center;"> <h3 style="text-decoration: underline;">What Can You Buy From VisapMobiles?</h3> <br>
+          From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, OnePlus.
+        </footer>
+      </div>
+    
